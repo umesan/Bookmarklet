@@ -6,7 +6,7 @@
  */
 
 // Compress by Online JavaScript/CSS Compression Using YUI Compressor [http://refresh-sf.com/yui/]
-// javascript:(function(){!function(n,i,c){c=n.createElement('script');c.src='bit.ly/1rW8thS';c.onload=function(){i(jQuery.noConflict(1))};n.body.appendChild(c)}(document,function(c){});var g=['#E51400','#FA6800','#F0A30A','#60A917','#008A00','#00ABA9','#1BA1E2','#0050EF','#6A00FF','#AA00FF','#F472D0','#D80073','#A20025','#E3C800','#825A2C','#6D8764','#647687','#76608A','#A4C400','#87794E'];var m='<div>forの設定値が不正です</div>';var k='labelkun_error';var l={display:'block','text-align':'center','font-size':'18px','line-height':'1.4','background-color':'#ff0000',color:'#ffffff',padding:'10px'};var d={color:'#ff0000 !important','font-size':'48px',position:'relative','font-weight':'bold'};var e='[';var b=[];$('label').each(function(n){var c=0;var o=$(this).attr('for');if(typeof o==='undefined'){c=1}else{if(o.indexOf(e)==-1){if(o.length){b.push(o)}else{c=1}}else{c=1}}if(c){m=$(m).addClass(k);$(this).css(d).append(m);$('.'+k).css(l)}});var a=b.filter(function(c,o,n){return n.indexOf(c)===o});label_array_filter_length=a.length;var f=g.length-1;var j=0;for(var h=0;h<label_array_filter_length;h++){if(j<f){j=j+1}else{j=0}label=a[h].replace('.','\\.');if(label.length){$('[for='+label+']').css({color:g[j]+'!important','font-size':'18px','font-weight':'bold'});$('#'+label).css({border:'4px solid '+g[j],outline:'4px solid '+g[j]})}}})();
+// javascript:(function(){!function(n,i,c){c=n.createElement('script');c.src='bit.ly/1rW8thS';c.onload=function(){i(jQuery.noConflict(1))};n.body.appendChild(c)}(document,function(c){});var g=['#E51400','#FA6800','#F0A30A','#60A917','#008A00','#00ABA9','#1BA1E2','#0050EF','#6A00FF','#AA00FF','#F472D0','#D80073','#A20025','#E3C800','#825A2C','#6D8764','#647687','#76608A','#A4C400','#87794E'];var m='<div>forの設定値が不正です</div>';var k='labelkun_error';var l={display:'block','text-align':'center','font-size':'18px','line-height':'1.4','background-color':'#ff0000',color:'#ffffff',padding:'10px'};var d={color:'#ff0000 !important','font-size':'48px',position:'relative','font-weight':'bold'};var e='[';var b=[];$('label').each(function(n){var c=0;var o=$(this).attr('for');if(typeof o==='undefined'){c=1}else{if(o.indexOf(e)==-1){if(o.length){b.push(o)}else{c=1}}else{c=1}}if(c){m=$(m).addClass(k);$(this).css(d).append(m);$('.'+k).css(l)}});var a=b.filter(function(c,o,n){return n.indexOf(c)===o});label_array_filter_length=a.length;var f=g.length-1;var j=0;for(var h=0;h<label_array_filter_length;h++){if(j<f){j=j+1}else{j=0}label=a[h].replace('.','\\.');if(label.length){$('[for='+label+']').css({cssText:'color:'+g[j]+' !important; font-size: 18px; font-weight: bold;'});$('#'+label).css({cssText:'border:4px solid '+g[j]+' !important; outline: 4px solid '+g[j]+' !important;'})}}})();
 
 javascript:(function(){
 
@@ -61,12 +61,8 @@ javascript:(function(){
     }
     label = label_array_filter[i].replace('.','\\.');
     if(label.length){
-      $('[for='+label+']').css({
-        'color': color[c]+'!important',
-        'font-size':'18px',
-        'font-weight':'bold'
-      });
-      $('#'+label).css({'border':'4px solid '+color[c],'outline':'4px solid '+color[c]});
+      $('[for='+label+']').css({'cssText':'color:'+color[c]+' !important; font-size: 18px; font-weight: bold;'});
+      $('#'+label).css({'cssText':'border:4px solid '+color[c]+' !important; outline: 4px solid '+color[c]+' !important;'});
     }
   };
 
